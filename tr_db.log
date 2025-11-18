@@ -1,0 +1,12 @@
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}
+  CREATE_STREAM @0 {NAME:apb_tx T:Transactions SCOPE:uvm_test_top.env.agent.sqr STREAM:560}

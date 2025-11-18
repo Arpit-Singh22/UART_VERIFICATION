@@ -21,5 +21,17 @@ class apb_driver extends uvm_driver#(apb_tx);
 	endtask
 
 	task drive_tx(apb_tx tx);
+		@(posedge vif.PCLK);
+		vif.PADDR  = tx.addr;
+		vif.PWDATA = tx.data;
+		vif.PWRITE = tx.write;
+		vif.PENABLE = 1;
+		vif.PSEL   	= 1;
+		
+		wait (vif.PREADY == 1);
+		@(posedge vif.PCLK);
+		vif.PADDR  = 0; 
+		vif.PWDATA = 0; 
+		vif.PWRITE = 0; 
 	endtask
 endclass

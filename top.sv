@@ -45,11 +45,7 @@ module top;
 
     initial begin
         uvm_config_db#(virtual apb_intf)::set(null, "*", "vif", pif);
-        run_test();
+        run_test("uart_reset_test");
     end
-	initial begin
-		$dumpfile("waveform.csv");
-		$dumpvars(0,top);
-	end
 endmodule
 
