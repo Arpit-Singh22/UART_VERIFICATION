@@ -14,599 +14,12 @@
 # //
 do run.do
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:37:36 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" top.sv "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# ** Error: (vlog-7) Failed to open design unit file "top.sv" in read mode.
-# No such file or directory. (errno = ENOENT)
-# End time: 16:37:36 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn top.sv +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:39:57 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# ** Error: list.svh(1): Cannot find `include file "../rtl/uart_top.sv" in directories:
-#     C:/questasim64_2024.1/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, C:/questasim64_2024.1/uvm-1.1d/../verilog_src/uvm-1.1d/src
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:39:57 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:40:14 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:40:15 on Nov 26,2025, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:40:32 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:40:32 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:40:50 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# -- Compiling interface wb_intf
-# ** Error: (vlog-13069) ** while parsing file included at list.svh(3)
-# ** at ../top/top.sv(4): near "pif": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 16:40:51 on Nov 26,2025, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:42:18 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# -- Compiling interface wb_intf
-# ** Error: (vlog-13069) ** while parsing file included at list.svh(3)
-# ** at ../top/top.sv(4): near "pif": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 16:42:18 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:43:42 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# -- Compiling interface wb_intf
-# ** Error: (vlog-13069) ** while parsing file included at list.svh(3)
-# ** at ../top/top.sv(4): near "pif": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 16:43:43 on Nov 26,2025, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:44:54 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# -- Compiling interface wb_intf
-# ** Error: (vlog-13069) ** while parsing file included at list.svh(3)
-# ** at ../top/top.sv(4): near "pif": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 16:44:54 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:46:42 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# -- Compiling interface wb_intf
-# ** Error: (vlog-13069) ** while parsing file included at list.svh(3)
-# ** at ../top/top.sv(4): near "pif": syntax error, unexpected IDENTIFIER, expecting ';'.
-# End time: 16:46:42 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:48:39 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:48:39 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog +acc=rn list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:49:04 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:49:04 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:50:28 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:50:28 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:52:02 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:52:02 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 16:58:13 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 16:58:13 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:04:16 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface wb_intf
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (wb_intf) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 17:04:16 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:06:27 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling module uart_top
-# -- Compiling interface uart_interface
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (uart_interface) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(2)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (uart_interface) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module top
-# End time: 17:06:27 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:06:57 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface uart_interface
-# ** Error (suppressible): ** while parsing file included at list.svh(1)
-# ** at ../wb_intf/wb_intf.sv(2): (vlog-2388) 'clk' already declared in this scope (uart_interface) at ../wb_intf/wb_intf.sv(1).
-# ** Error (suppressible): ** while parsing file included at list.svh(1)
-# ** at ../wb_intf/wb_intf.sv(3): (vlog-2388) 'wb_rst_i' already declared in this scope (uart_interface) at ../wb_intf/wb_intf.sv(1).
-# -- Compiling module uart_top
-# -- Compiling module top
-# End time: 17:06:57 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/questasim64_2024.1/win64/vlog failed.
-# Error in macro ./run.do line 1
-# C:/questasim64_2024.1/win64/vlog failed.
-#     while executing
-# "vlog  list.svh +define+UART_HAS_BAUDRATE_OUTPUT"
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:08:02 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface uart_interface
-# -- Compiling module uart_top
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 17:08:02 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_interface
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_interface
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# ** Error: (vsim-3033) Instantiation of 'uart_wb' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 247
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_regs' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 268
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_debug_if' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 306
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 2
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:08:43 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
-# -- Compiling module uart_top
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 17:08:43 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_intf
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_intf
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# ** Error: (vsim-3033) Instantiation of 'uart_wb' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 247
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_regs' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 268
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_debug_if' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut File: ../rtl/uart_top.v Line: 306
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 2
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:12:16 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
-# -- Compiling module uart_wb
-# -- Compiling module uart_regs
-# -- Compiling module uart_debug_if
-# -- Compiling module uart_top
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 17:12:16 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_intf
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_intf
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_wb
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_wb
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_regs
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_regs
-# ** Error: (vsim-3033) Instantiation of 'uart_transmitter' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs File: ../rtl/uart_regs.v Line: 379
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_sync_flops' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs File: ../rtl/uart_regs.v Line: 382
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# ** Error: (vsim-3033) Instantiation of 'uart_receiver' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs File: ../rtl/uart_regs.v Line: 399
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_debug_if
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_debug_if
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 2
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:13:41 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
-# -- Compiling module uart_wb
-# -- Compiling module uart_sync_flops
-# -- Compiling module uart_transmitter
-# -- Compiling module uart_receiver
-# -- Compiling module uart_regs
-# -- Compiling module uart_debug_if
-# -- Compiling module uart_top
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 17:13:41 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_intf
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_intf
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_wb
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_wb
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_regs
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_regs
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_transmitter
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_transmitter
-# ** Error: (vsim-3033) Instantiation of 'uart_tfifo' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs/transmitter File: ../rtl/uart_transmitter.v Line: 188
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_sync_flops
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_sync_flops
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_receiver
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_receiver
-# ** Error: (vsim-3033) Instantiation of 'uart_rfifo' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs/receiver File: ../rtl/uart_receiver.v Line: 242
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_debug_if
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_debug_if
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 2
-pwd
-# C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:14:30 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
-# -- Compiling module uart_wb
-# -- Compiling module uart_sync_flops
-# -- Compiling module uart_tfifo
-# -- Compiling module uart_transmitter
-# -- Compiling module uart_receiver
-# -- Compiling module uart_regs
-# -- Compiling module uart_debug_if
-# -- Compiling module uart_top
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# End time: 17:14:30 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_intf
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_intf
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_wb
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_wb
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_regs
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_regs
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_transmitter
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_transmitter
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_tfifo
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_tfifo
-# ** Error: (vsim-3033) Instantiation of 'raminfr' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs/transmitter/fifo_tx File: ../rtl/uart_tfifo.v Line: 185
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_sync_flops
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_sync_flops
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_receiver
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_receiver
-# ** Error: (vsim-3033) Instantiation of 'uart_rfifo' failed. The design unit was not found.
-#    Time: 0 ns  Iteration: 0  Instance: /top/dut/regs/receiver File: ../rtl/uart_receiver.v Line: 242
-#         Searched libraries:
-#             C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_debug_if
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_debug_if
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 2
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:16:04 on Nov 26,2025
-# vlog -reportprogress 300 list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
+# Start time: 14:42:27 on Nov 27,2025
+# vlog -reportprogress 300 list.svh "+incdir+C:/uvm-1.2/src" "+define+UART_HAS_BAUDRATE_OUTPUT" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
 # -- Compiling module uart_wb
 # -- Compiling module uart_sync_flops
 # -- Compiling module raminfr
@@ -621,18 +34,28 @@ do run.do
 # 
 # Top level modules:
 # 	top
-# End time: 17:16:04 on Nov 26,2025, Elapsed time: 0:00:00
+# End time: 14:42:28 on Nov 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top 
-# Start time: 17:08:02 on Nov 26,2025
+# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 14:42:28 on Nov 27,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\export_tramp.dll
 # ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
 # Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading sv_std.std
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_intf
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.list_svh_unit
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_intf
+# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.list_svh_unit
+# Loading work.top
+# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_interface
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading work.wb_interface
 # Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
 # Loading work.uart_top
@@ -663,74 +86,160 @@ do run.do
 # Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_debug_if
 # ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
 # Loading work.uart_debug_if
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
-#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 6
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
-#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 6
-# GetModuleFileName: The specified module could not be found.
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 31656
+#           Attempting to use alternate WLF file "./wlftn935ym".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftn935ym
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
 # 
+#   ***********       IMPORTANT RELEASE NOTES         ************
 # 
-# GetModuleFileName: The specified module could not be found.
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
 # 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
 # 
 # (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
 # 
 # (top.dut) UART INFO: Has baudrate output
 # 
-# Break key hit
-# Break in Module raminfr at ../rtl/raminfr.v line 104
-do run.do
-# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 17:16:47 on Nov 26,2025
-# vlog -reportprogress 300 "+acc=rn" list.svh "+define+UART_HAS_BAUDRATE_OUTPUT" 
-# -- Compiling interface wb_intf
-# -- Compiling module uart_wb
-# -- Compiling module uart_sync_flops
-# -- Compiling module raminfr
-# -- Compiling module uart_tfifo
-# -- Compiling module uart_transmitter
-# -- Compiling module uart_rfifo
-# -- Compiling module uart_receiver
-# -- Compiling module uart_regs
-# -- Compiling module uart_debug_if
-# -- Compiling module uart_top
-# -- Compiling module top
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
 # 
-# Top level modules:
-# 	top
-# End time: 17:16:47 on Nov 26,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:16:48 on Nov 26,2025, Elapsed time: 0:08:46
-# Errors: 13, Warnings: 8
-# vsim top 
-# Start time: 17:16:48 on Nov 26,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
-# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.top(fast)
-# Loading work.wb_intf(fast__1)
-# Loading work.uart_top(fast)
-# Loading work.uart_wb(fast)
-# Loading work.uart_regs(fast)
-# Loading work.uart_transmitter(fast)
-# Loading work.uart_tfifo(fast)
-# Loading work.raminfr(fast)
-# Loading work.uart_sync_flops(fast)
-# Loading work.uart_receiver(fast)
-# Loading work.uart_rfifo(fast)
-# Loading work.uart_debug_if(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
-#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 6
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
-#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 6
-# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  32    'h3                           
+#   data                         integral  32    'h80                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  32    'h0                           
+#   data                         integral  32    'h68                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    65000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  32    'h1                           
+#   data                         integral  32    'h0                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    105000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  32    'h3                           
+#   data                         integral  32    'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    145000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  32    'h2                           
+#   data                         integral  32    'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    185000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  32    'h0                           
+#   data                         integral  32    'h5                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 266000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 266000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
 # 
-# (top.dut) UART INFO: Has baudrate output
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
 # 
-# ** Note: $finish    : ../top/top.sv(36)
-#    Time: 1025 ns  Iteration: 0  Instance: /top
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 266 ns  Iteration: 67  Instance: /top
 # 1
-# Break at ../top/top.sv line 36
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517

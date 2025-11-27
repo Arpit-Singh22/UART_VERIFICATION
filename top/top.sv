@@ -1,10 +1,11 @@
+`timescale 1ns/1ps
 module top;
 	logic clk,rst;
 
-	wb_intf pif(clk,rst);
+	wb_interface pif(clk,rst);
 
 	uart_top dut(	
-	.wb_clk_i(pif.clk),
+	.wb_clk_i(pif.wb_clk_i),
 	.wb_rst_i(pif.wb_rst_i),
 	.wb_adr_i(pif.wb_addr_i),
 	.wb_dat_i(pif.wb_dat_i),
@@ -29,10 +30,13 @@ module top;
 	always #5 clk=~clk;
 	initial begin
 		clk=0;
-		rst=0;
-		repeat(3) @(posedge clk);
 		rst=1;
-		//uvm_test("base_test");
-		#1000 $finish;
+		repeat(3) @(posedge clk);
+		rst=0;
+	end
+	initial begin
+		uvm_config_db#(virtual wb_interface)::set(null, "*","vif", pif);
+		//run_test("uart_reg_reset_test");
+		run_test("uart_tx_byte_test");
 	end
 endmodule
