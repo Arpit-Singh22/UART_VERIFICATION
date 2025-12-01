@@ -1,6 +1,6 @@
 class wb_tx extends uvm_sequence_item;
-	rand bit [31:0] addr;
-	rand bit [31:0] data;
+	rand bit [2:0] addr;
+	rand bit [7:0] data;
 	rand bit [3:0] sel;
 	rand bit wr_rd;
 	`uvm_object_utils_begin(wb_tx)

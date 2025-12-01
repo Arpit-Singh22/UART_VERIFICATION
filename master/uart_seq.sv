@@ -32,24 +32,27 @@ class uart_tx_byte_seq extends uart_base_seq;
 
 	task body();
 		//LCR        allow access to divisor
-		data_t = 8'h80;
-		`uvm_do_with(req, {req.addr==32'h3; req.wr_rd==1; req.data==data_t;})
+		data_t = {1'b0,1'b1, 6'b0};
+		`uvm_do_with(req, {req.addr==3; req.wr_rd==1; req.data==data_t;})
 		
-
 		//DLL (lsb)
-		data_t = 8'h68;
-		`uvm_do_with(req, {req.addr==32'h0; req.wr_rd==1; req.data==data_t;})
-
+		data_t = 8'h8B;
+		`uvm_do_with(req, {req.addr==0; req.wr_rd==1; req.data==data_t;})
 		//DLM (msb)
-		data_t = 8'h00;
-		`uvm_do_with(req, {req.addr==32'h1; req.wr_rd==1; req.data==data_t;})
+		data_t = 8'h02;
+		`uvm_do_with(req, {req.addr==1; req.wr_rd==1; req.data==data_t;})
 		//LCR   
 		data_t = 8'h03;
-		`uvm_do_with(req, {req.addr==32'h3; req.wr_rd==1; req.data==data_t;})
-		
+		`uvm_do_with(req, {req.addr==3; req.wr_rd==1; req.data==data_t;})
+		////IER
+		data_t = {4'b0, 4'b1};
+		`uvm_do_with(req, {req.addr==1; req.wr_rd==1; req.data==data_t;})
+
 		//FCR
-		`uvm_do_with(req, {req.addr==32'h2; req.wr_rd==1; req.data==8'h01;})
+		`uvm_do_with(req, {req.addr==2; req.wr_rd==1; req.data==8'h00;})
+		
 		//THR
-		`uvm_do_with(req, {req.addr==32'h0; req.wr_rd==1; req.data==8'h05;})
+		for(int i=0;i<2;i++) begin `uvm_do_with(req, {req.addr==0; req.wr_rd==1; req.data==i;})
+		end
 	endtask
 endclass

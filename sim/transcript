@@ -14,8 +14,8 @@
 # //
 do run.do
 # QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
-# Start time: 14:42:27 on Nov 27,2025
-# vlog -reportprogress 300 list.svh "+incdir+C:/uvm-1.2/src" "+define+UART_HAS_BAUDRATE_OUTPUT" 
+# Start time: 17:00:11 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
 # -- Compiling package uvm_pkg
 # -- Compiling package list_svh_unit
 # -- Importing package uvm_pkg
@@ -34,66 +34,1036 @@ do run.do
 # 
 # Top level modules:
 # 	top
-# End time: 14:42:28 on Nov 27,2025, Elapsed time: 0:00:01
+# End time: 17:00:12 on Dec 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -suppress 12110 top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
-# Start time: 14:42:28 on Nov 27,2025
-# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\export_tramp.dll
-# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:00:12 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29388\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
 # This also means that later if you turn on UVM-aware debugging your debug simulations may have
 # different random seeds from your non-debug simulations.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.list_svh_unit
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uvm_pkg
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
 # Loading sv_std.std
-# Loading work.uvm_pkg
-# Loading work.list_svh_unit
-# Loading work.top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.wb_interface
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.wb_interface
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_top
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_top
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_wb
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_wb
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_regs
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_regs
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_transmitter
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_transmitter
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_tfifo
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_tfifo
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.raminfr
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.raminfr
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_sync_flops
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_sync_flops
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_receiver
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_receiver
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_rfifo
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_rfifo
-# Refreshing C:/Users/arpit/OneDrive/Desktop/Project/UART_VERIFICATION/sim/work.uart_debug_if
-# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
-# Loading work.uart_debug_if
-# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\exportwrapper.c
-# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29912\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29388\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_29388\win64_cl-19.44.35217\vsim_auto_compile.dll
 # Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: arpit  Hostname: JEDI  ProcessID: 31656
-#           Attempting to use alternate WLF file "./wlftn935ym".
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlftrbzbsf".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftn935ym
+#           Using alternate file: ./wlftrbzbsf
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Doesn't have baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h80                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:04:19 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:04:20 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:04:21 on Dec 01,2025, Elapsed time: 0:04:09
+# Errors: 0, Warnings: 5
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:04:21 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_28576\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_28576\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_28576\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlft120mzz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft120mzz
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Doesn't have baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h93                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:05:42 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:05:43 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:05:43 on Dec 01,2025, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:05:43 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_32420\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_32420\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_32420\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlftm4r7bj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm4r7bj
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Doesn't have baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h93                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:08:15 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:08:16 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:08:16 on Dec 01,2025, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:08:16 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39136\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39136\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39136\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlft0346sq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0346sq
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Doesn't have baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:10:14 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" "+define+UART_HAS_BAUDRATE_OUTPUT" 
+# -- Compiling package uvm_pkg
+# ** Warning: list.svh(2): (vlog-13233) Design unit "list_svh_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:10:15 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 17:10:15 on Dec 01,2025, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:10:15 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_26788\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Warning: ../top/top.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 20, found 19.
+# ** Warning: ../top/top.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'baud_o'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_26788\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_26788\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlft6hqkwa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6hqkwa
 # UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
 # ----------------------------------------------------------------
 # UVM-1.2
@@ -144,8 +1114,8 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @565                          
-#   addr                         integral  32    'h3                           
-#   data                         integral  32    'h80                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
 #   sel                          integral  4     'h2                           
 #   wr_rd                        integral  1     'h1                           
 #   begin_time                   time      64    25000                         
@@ -158,11 +1128,11 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @595                          
-#   addr                         integral  32    'h0                           
-#   data                         integral  32    'h68                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
 #   sel                          integral  4     'ha                           
 #   wr_rd                        integral  1     'h1                           
-#   begin_time                   time      64    65000                         
+#   begin_time                   time      64    75000                         
 #   depth                        int       32    'd2                           
 #   parent sequence (name)       string    3     seq                           
 #   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
@@ -172,11 +1142,11 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @599                          
-#   addr                         integral  32    'h1                           
-#   data                         integral  32    'h0                           
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
 #   sel                          integral  4     'h6                           
 #   wr_rd                        integral  1     'h1                           
-#   begin_time                   time      64    105000                        
+#   begin_time                   time      64    125000                        
 #   depth                        int       32    'd2                           
 #   parent sequence (name)       string    3     seq                           
 #   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
@@ -186,11 +1156,11 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @603                          
-#   addr                         integral  32    'h3                           
-#   data                         integral  32    'h3                           
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
 #   sel                          integral  4     'ha                           
 #   wr_rd                        integral  1     'h1                           
-#   begin_time                   time      64    145000                        
+#   begin_time                   time      64    175000                        
 #   depth                        int       32    'd2                           
 #   parent sequence (name)       string    3     seq                           
 #   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
@@ -200,11 +1170,11 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @607                          
-#   addr                         integral  32    'h2                           
-#   data                         integral  32    'h1                           
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
 #   sel                          integral  4     'h1                           
 #   wr_rd                        integral  1     'h1                           
-#   begin_time                   time      64    185000                        
+#   begin_time                   time      64    225000                        
 #   depth                        int       32    'd2                           
 #   parent sequence (name)       string    3     seq                           
 #   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
@@ -214,18 +1184,46 @@ do run.do
 # Name                           Type      Size  Value                         
 # -----------------------------------------------------------------------------
 # req                            wb_tx     -     @611                          
-#   addr                         integral  32    'h0                           
-#   data                         integral  32    'h5                           
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
 #   sel                          integral  4     'hd                           
 #   wr_rd                        integral  1     'h1                           
-#   begin_time                   time      64    225000                        
+#   begin_time                   time      64    275000                        
 #   depth                        int       32    'd2                           
 #   parent sequence (name)       string    3     seq                           
 #   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
 #   sequencer                    string    26    uvm_test_top.env.agent.sqr    
 # -----------------------------------------------------------------------------
-# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 266000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
-# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 266000: reporter [UVM/REPORT/SERVER] 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
 # --- UVM Report Summary ---
 # 
 # ** Report counts by severity
@@ -240,6 +1238,1243 @@ do run.do
 # [UVMTOP]     1
 # 
 # ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
-#    Time: 266 ns  Iteration: 67  Instance: /top
+#    Time: 426 ns  Iteration: 67  Instance: /top
 # 1
 # Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:10:34 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" "+define+UART_HAS_BAUDRATE_OUTPUT" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:10:35 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:10:35 on Dec 01,2025, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 8
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:10:35 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_34728\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_34728\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_34728\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlftnrh7zr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnrh7zr
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:11:18 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# ** Warning: list.svh(2): (vlog-13233) Design unit "list_svh_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:11:19 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 17:11:20 on Dec 01,2025, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:11:20 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_36960\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_36960\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_36960\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlftzygvwt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzygvwt
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 426000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 426000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 426 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:21:11 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:21:12 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:21:12 on Dec 01,2025, Elapsed time: 0:09:52
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:21:12 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_33088\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_33088\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_33088\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlftghjcfx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftghjcfx
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 428000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 428000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 428 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:23:08 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:23:09 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:23:09 on Dec 01,2025, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:23:09 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39088\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39088\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_39088\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlft0aayfb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0aayfb
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 428000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 428000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 428 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+# Start time: 17:26:21 on Dec 01,2025
+# vlog -reportprogress 300 list.svh "+acc" "+incdir+C:/uvm-1.2/src" 
+# -- Compiling package uvm_pkg
+# -- Compiling package list_svh_unit
+# -- Importing package uvm_pkg
+# -- Compiling interface wb_interface
+# -- Compiling module uart_wb
+# -- Compiling module uart_sync_flops
+# -- Compiling module raminfr
+# -- Compiling module uart_tfifo
+# -- Compiling module uart_transmitter
+# -- Compiling module uart_rfifo
+# -- Compiling module uart_receiver
+# -- Compiling module uart_regs
+# -- Compiling module uart_debug_if
+# -- Compiling module uart_top
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:26:22 on Dec 01,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:26:22 on Dec 01,2025, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 6
+# vsim top -sv_lib C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi 
+# Start time: 17:26:22 on Dec 01,2025
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_24452\win64_cl-19.44.35217\export_tramp.dll
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_receiver(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_transmitter(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_wb(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading sv_std.std
+# Loading work.wb_interface(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.wb_interface(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading work.uart_debug_if(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (3) for port 'wb_adr_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_i'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (8) for port 'wb_dat_o'. The port definition is at: ../rtl/uart_top.v(147).
+#    Time: 0 ps  Iteration: 0  Instance: /top/dut File: ../top/top.sv Line: 7
+# Compiling C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_24452\win64_cl-19.44.35217\exportwrapper.c
+# Loading C:/Users/arpit/AppData/Local/Temp\arpit@JEDI_dpi_24452\win64_cl-19.44.35217\vsim_auto_compile.dll
+# Loading C:/questasim64_2024.1/uvm-1.2/win64/uvm_dpi.dll
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: arpit  Hostname: JEDI  ProcessID: 4140
+#           Attempting to use alternate WLF file "./wlft776yti".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft776yti
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# (top.dut) UART INFO: Data bus width is 32. Debug Interface present.
+# 
+# (top.dut) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_tx_byte_test...
+# UVM_INFO C:/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uart_tx_byte_test       -     @339 
+#   env                      uart_env                -     @352 
+#     agent                  uart_agent              -     @361 
+#       drv                  uart_driver             -     @507 
+#         rsp_port           uvm_analysis_port       -     @526 
+#         seq_item_port      uvm_seq_item_pull_port  -     @516 
+#       sqr                  uvm_sequencer           -     @370 
+#         rsp_export         uvm_analysis_export     -     @379 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @497 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @565                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h40                          
+#   sel                          integral  4     'h2                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    25000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @595                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h8b                          
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    75000                         
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @599                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h2                           
+#   sel                          integral  4     'h6                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    125000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @603                          
+#   addr                         integral  3     'h3                           
+#   data                         integral  8     'h3                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    175000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @607                          
+#   addr                         integral  3     'h1                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'h1                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    225000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @611                          
+#   addr                         integral  3     'h2                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hd                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    275000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @615                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h0                           
+#   sel                          integral  4     'hc                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    325000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Name                           Type      Size  Value                         
+# -----------------------------------------------------------------------------
+# req                            wb_tx     -     @619                          
+#   addr                         integral  3     'h0                           
+#   data                         integral  8     'h1                           
+#   sel                          integral  4     'ha                           
+#   wr_rd                        integral  1     'h1                           
+#   begin_time                   time      64    375000                        
+#   depth                        int       32    'd2                           
+#   parent sequence (name)       string    3     seq                           
+#   parent sequence (full name)  string    30    uvm_test_top.env.agent.sqr.seq
+#   sequencer                    string    26    uvm_test_top.env.agent.sqr    
+# -----------------------------------------------------------------------------
+# UVM_INFO C:/uvm-1.2/src/base/uvm_objection.svh(1270) @ 435000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/uvm-1.2/src/base/uvm_report_server.svh(847) @ 435000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# 
+# ** Note: $finish    : C:/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 435 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/uvm-1.2/src/base/uvm_root.svh line 517
+# Causality operation skipped due to absence of debug database file

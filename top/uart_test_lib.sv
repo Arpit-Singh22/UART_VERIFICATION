@@ -23,7 +23,7 @@ class TEST extends uart_base_test;\
 		super.run_phase(phase);\
 		phase.raise_objection(this);\
 		seq.start(env.agent.sqr);\
-		phase.phase_done.set_drain_time(this, 1000);\
+		phase.phase_done.set_drain_time(this, 10000);\
 		phase.drop_objection(this);\
 	endtask\
 endclass

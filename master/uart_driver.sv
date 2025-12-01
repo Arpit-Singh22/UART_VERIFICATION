@@ -19,22 +19,24 @@ class uart_driver extends uvm_driver#(wb_tx);
 	endtask
 
 		task drive_tx(wb_tx tx);
-		@(posedge vif.wb_clk_i);
-		vif.wb_addr_i <= tx.addr;
-		if (tx.wr_rd == 1) vif.wb_dat_i <= tx.data;
-		vif.wb_we_i  <= tx.wr_rd;
-		vif.wb_sel_i <= 4'hF;
-		vif.wb_stb_i <= 1'b1;
-		vif.wb_cyc_i <= 1'b1;
+			@(posedge vif.wb_clk_i);
+			vif.wb_addr_i = tx.addr;
+			vif.wb_we_i  = tx.wr_rd;
+			vif.wb_sel_i = 4'b0001;
+			vif.wb_stb_i = 1'b1;
+			vif.wb_cyc_i = 1'b1;
 
-		wait (vif.wb_ack_o == 1'b1);
-		if(tx.wr_rd == 0 ) tx.data = vif.wb_dat_o;
+			if (tx.wr_rd == 1) vif.wb_dat_i = tx.data;
+			wait (vif.wb_ack_o == 1'b1);
+			if(tx.wr_rd == 0 ) tx.data = vif.wb_dat_o;
 
-		@(posedge vif.wb_clk_i);
-		vif.wb_addr_i <= 0; 
-		vif.wb_dat_i <= 0;
-		vif.wb_sel_i <= 0; 
-		vif.wb_stb_i <= 0; 
-		vif.wb_cyc_i <= 0; 
+			@(posedge vif.wb_clk_i);
+			vif.wb_stb_i = 0; 
+			vif.wb_cyc_i = 0; 
+
+			@(posedge vif.wb_clk_i);
+			vif.wb_addr_i = 0; 
+			vif.wb_dat_i = 0;
+			vif.wb_sel_i = 0; 
 	endtask	
 endclass
